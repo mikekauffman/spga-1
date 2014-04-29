@@ -1,5 +1,10 @@
 <% all_dogs.each do |dog| %>
-<%= dog[:breed] %>
+    <li>
+<%= dog[:breed]%>'s are usually
 <%= dog[:color] %>
+      and
 <%= dog[:size] %>
+      <br>
+      <a href="/dogs/<%=dog[:id]%>">view <%=dog[:breed]%></a>
+    </li>
 <% end %>

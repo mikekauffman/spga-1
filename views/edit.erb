@@ -1,0 +1,9 @@
+Edit <%=dog[:breed]%>:
+<form action="/dogs/edit/<%=dog[:id]%>" method="post">
+  <input type="text" name="dog_breed" placeholder="<%=dog[:breed]%>">
+  <input type="text" name="dog_color" placeholder="<%=dog[:color]%>">
+  <input type="text" name="dog_size" placeholder="<%=dog[:size]%>">
+  <input type="submit" value="Submit">
+</form>
+<br>
+<a href="/dogs/delete/<%=dog[:id]%>">delete <%=dog[:breed]%></a>
